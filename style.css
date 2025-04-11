@@ -43,7 +43,7 @@
 
 body {
     font-family: var(--sans-serif-font);
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: var(--grey-500-color);
     background-color: var(--white-color);
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .hero {
-    margin: 60px 0;
+    margin: 3.75rem 0;
     text-align: center;
 }
 
@@ -63,21 +63,21 @@ body {
 
 .hero-title {
     font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .hero-description {
-    max-width: 530px;
+    max-width: 33rem;
     line-height: 1.4;
 }
 
 .card {
-    border-radius: 4px;
-    padding: 30px;
-    max-width: 315px;
-    min-height: 250px;
-    box-shadow: 0 4px 16px var(--grey-400-color);
+    border-radius: 0.25rem;
+    padding: 1.875rem;
+    max-width: 19.687rem;
+    min-height: 15.625rem;
+    box-shadow: 0 .25rem 1rem var(--grey-400-color);
 
     display: flex;
     flex-direction: column;
@@ -85,41 +85,41 @@ body {
 }
 
 .card + .card {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .card-grid {
     display: grid;
-    margin-bottom: 45px;
+    margin-bottom: 2.8125rem;
 }
 
 .card:nth-child(1) {
-    border-top: 4px solid var(--cyan-color);
+    border-top: 0.25rem solid var(--cyan-color);
 }
 
 .card:nth-child(2) {
-    border-top: 4px solid var(--red-color);
+    border-top: 0.25rem solid var(--red-color);
 }
 
 .card:nth-child(3) {
-    border-top: 4px solid var(--orange-color);
+    border-top: 0.25rem solid var(--orange-color);
 }
 
 .card:nth-child(4) {
-    border-top: 4px solid var(--blue-color);
+    border-top: 0.25rem solid var(--blue-color);
 }
 
 .card-title {
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
 }
 
 .card-description {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.6;
 }
 
 .card-icon-picture {
-    width: 66px;
+    width: 4.125rem;
     aspect-ratio: 1/1;
 
     align-self: flex-end;
@@ -129,21 +129,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 
-@media (width > 799px) {
+@media (width >= 50rem) {
     .hero {
-        margin-top: 100px;
+        margin-top: 6.25rem;
     }
 
     .card {
-        margin: 16px;
+        margin: 1rem;
     }
 
     .card + .card {
-        margin: 16px;
+        margin: 1rem;
     }
 
     .card:nth-child(1) {
@@ -163,6 +163,6 @@ body {
     }
 
     .container {
-        margin-bottom: 160px;
+        margin-bottom: 10rem;
     }
 }
