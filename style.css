@@ -45,6 +45,7 @@ body {
     font-family: var(--sans-serif-font);
     font-size: 15px;
     color: var(--grey-500-color);
+    background-color: var(--white-color);
 }
 
 .attribution {
