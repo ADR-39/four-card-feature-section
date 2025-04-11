@@ -75,7 +75,7 @@ body {
 .card {
     border-radius: 0.25rem;
     padding: 1.875rem;
-    max-width: 21.875rem;
+    max-width: 25rem;
     min-height: 15.625rem;
     box-shadow: 0 1px 10px 0 var(--grey-400-color);
 
@@ -142,6 +142,10 @@ body {
 
     .hero-title {
         font-size: 2.25rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(25rem, 1fr));
     }
 
     .card {
