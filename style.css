@@ -1,0 +1,129 @@
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('fonts/poppins-v22-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/poppins-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/poppins-v22-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --red-color:      hsl(0, 78%, 62%);
+    --cyan-color:     hsl(180, 62%, 55%);
+    --orange-color:   hsl(34, 97%, 64%);
+    --blue-color:     hsl(212, 86%, 64%);
+    --grey-500-color: hsl(234, 12%, 34%);
+    --grey-400-color: hsl(212, 6%, 44%);
+    --white-color:    hsl(0, 0%, 100%);
+
+    --sans-serif-font: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--sans-serif-font);
+    font-size: 15px;
+    color: var(--grey-500-color);
+}
+
+.attribution {
+    display: none;
+}
+
+.hero {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.hero-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    line-height: 1.4;
+}
+
+.card {
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 315px;
+    min-height: 250px;
+    box-shadow: 0 4px 16px var(--grey-400-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card + .card {
+    margin-top: 30px;
+}
+
+.card-grid {
+    margin-bottom: 45px;
+}
+
+.card:nth-child(1) {
+    border-top: 4px solid var(--cyan-color);
+}
+
+.card:nth-child(2) {
+    border-top: 4px solid var(--red-color);
+}
+
+.card:nth-child(3) {
+    border-top: 4px solid var(--orange-color);
+}
+
+.card:nth-child(4) {
+    border-top: 4px solid var(--blue-color);
+}
+
+.card-title {
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.card-icon-picture {
+    width: 66px;
+    aspect-ratio: 1/1;
+
+    align-self: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
